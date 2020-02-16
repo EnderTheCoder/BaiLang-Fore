@@ -1,0 +1,47 @@
+.form-content {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 150px);
+    z-index: 1;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: calc(50vh + 200px);
+    width: calc(100vw);
+}
+
+label {
+    color: white;
+}
+
+#section {
+    position: fixed;
+    z-index: 0;
+}
+
+#Captcha-input {
+    width: 150px;
+}
+
+#Captcha-img {
+    width: 50%;
+    position: relative;
+    bottom: 38px;
+    left: 150px;
+}
+
+#reg-captcha-input {
+    width: 150px;
+}
+
+#reg-captcha-img {
+    width: 50%;
+    position: relative;
+    bottom: 38px;
+    left: 150px;
+}

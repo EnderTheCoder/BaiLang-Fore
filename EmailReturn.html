@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/CustomFunctions.js"></script>
+    <title>邮箱链接验证页</title>
+</head>
+<body>
+<script type="text/javascript">
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: "https://api.aiim.ren/Identify.php",//url
+        data: {
+            'type': 'emailVerify',
+            'token': $.getUrlParam("token")
+        },
+        success: function (data) {
+            const jsons = eval(data);
+            resultHandler(jsons);
+        },
+        error: function () {
+            alert("服务器异常！");
+        }
+    });
+</script>
+</body>
+</html>

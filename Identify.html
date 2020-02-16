@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/StarWarsBG.css" rel="stylesheet" type="text/css">
+    <link href="css/Identify.css" rel="stylesheet" type="text/css">
+    <title>白浪轻腾</title>
+</head>
+<body>
+<h2>白浪轻腾-登录or注册</h2>
+<div class="form-content">
+    <form id="login-form">
+        <div class="form-group">
+            <label for="ID">用户</label>
+            <input type="text" class="form-control" id="ID" placeholder="UID/手机/邮箱">
+            <!--            <small id="emailHelp" class="form-text text-muted">用于确认您的账户信息</small>-->
+        </div>
+        <div class="form-group">
+            <label for="Password">密码</label>
+            <input type="password" class="form-control" id="Password" placeholder="密码">
+        </div>
+        <div class="form-group">
+            <label for="Captcha-input">验证码</label>
+            <input type="text" class="form-control" id="Captcha-input" placeholder="验证码" autocomplete="off">
+            <img src="https://api.aiim.ren/Captcha.php" alt="验证码" onclick="this.src='https://api.aiim.ren/Captcha.php'"
+                 id="Captcha-img">
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block login">登录</button>
+        <button type="button" class="btn btn-secondary btn-lg btn-block switchToReg1">没有账号？</button>
+    </form>
+    <form id="register-form-1" style="display: none">
+        <div class="form-group">
+            <label for="nickName">昵称</label>
+            <input type="text" class="form-control" id="nickName" placeholder="昵称">
+        </div>
+        <div class="form-group">
+            <label for="email">邮箱</label>
+            <input type="email" class="form-control" id="email" placeholder="示例：username@example.com">
+        </div>
+        <div class="form-group">
+            <label for="reg-password">密码</label>
+            <input type="password" class="form-control" id="reg-password" placeholder="密码">
+        </div>
+        <div class="form-group">
+            <label for="reg-rePassword">确认密码</label>
+            <input type="password" class="form-control" id="reg-rePassword" placeholder="密码">
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block next">下一步</button>
+    </form>
+    <form id="register-form-2" style="display: none">
+        <div class="form-group">
+            <label for="phone">手机</label>
+            <input type="text" class="form-control" id="phone" placeholder="11位合法大陆手机号">
+        </div>
+        <div class="form-group">
+            <label for="reg-captcha-input">验证码</label>
+            <input type="text" class="form-control" id="reg-captcha-input" placeholder="验证码" autocomplete="off">
+            <img src="https://api.aiim.ren/Captcha.php" alt="验证码" onclick="this.src='https://api.aiim.ren/Captcha.php'"
+                 id="reg-captcha-img">
+            <button type="button" class="btn btn-outline-success send-phone-captcha">发送</button>
+        </div>
+        <div class="form-group">
+            <label for="phone-captcha">手机验证码</label>
+            <input type="text" class="form-control" id="phone-captcha" placeholder="123456">
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block register">注册</button>
+    </form>
+</div>
+<div id="section">
+    <div class="at-at">
+        <div class="at-at-content">
+            <div class="at-at-body">
+                <div class="at-at-head">
+                    <div class="at-at-neck">
+                        <div class="neck-ribs">
+                            <div class="neck-cable-first"></div>
+                            <div class="neck-cable-second"></div>
+                            <div class="neck-cable-last"></div>
+                            <i></i><i></i><i></i><i></i>
+                        </div>
+                        <div class="neck-bg"></div>
+                    </div>
+                    <div class="head-bg">
+                        <div class="head-snout">
+                            <div class="in-head-snout"></div>
+                            <div class="head-snout-gun"></div>
+                        </div>
+                        <i class="head-bg-first"></i>
+                        <i class="head-bg-second"></i>
+                    </div>
+                    <div class="head">
+                        <div class="head-chin">
+                            <i class="head-chin-bg-first"></i>
+                            <i class="head-chin-bg-second"></i>
+                            <i class="head-gun"></i>
+                            <i class="fire"><i></i><i></i><i></i></i>
+                        </div>
+                    </div>
+                    <i class="head-left-bg"></i>
+                    <i class="head-top-bg"></i>
+                </div>
+                <div class="at-at-body-left">
+                    <i class="at-at-body-left-bg-1"></i>
+                    <i class="at-at-body-left-bg-2"></i>
+                    <i class="at-at-body-left-bg-3"></i>
+                    <i class="at-at-body-left-bg-4"></i>
+                    <i class="at-at-body-left-bg-5"></i>
+                    <div class="at-at-body-left-bg"></div>
+                </div>
+                <div class="at-at-body-right">
+                    <i class="at-at-body-right-bg-1"></i>
+                    <i class="at-at-body-right-bg-2"></i>
+                    <i class="at-at-body-right-bg-3"></i>
+                    <i class="at-at-body-right-bg-4"></i>
+                    <i class="at-at-body-right-bg-5"></i>
+                    <div class="at-at-body-right-bg"></div>
+                </div>
+                <div class="at-at-body-bottom">
+                    <div class="at-at-body-bottom-bg"><i></i><i></i><i></i></div>
+                    <div class="body-bottom-left"></div>
+                </div>
+                <div class="at-at-body-bg">
+                    <i></i><i></i><i></i><i></i>
+                    <div class="i"></div>
+                </div>
+                <div class="at-at-body-bg-first-block">
+                    <i class="at-at-body-bg-first-block-item-1"></i>
+                    <i class="at-at-body-bg-first-block-item-2"></i>
+                    <i class="at-at-body-bg-first-block-item-3"></i>
+                </div>
+                <div class="at-at-body-bg-second-block">
+                    <i class="at-at-body-bg-second-block-item-1"></i>
+                    <i class="at-at-body-bg-second-block-item-2"></i>
+                </div>
+                <div class="at-at-body-bg-third-block">
+                    <i class="at-at-body-bg-third-block-item-1"></i>
+                    <i class="at-at-body-bg-third-block-item-2"></i>
+                    <i class="at-at-body-bg-third-block-item-3"></i>
+                </div>
+            </div>
+            <div class="dark-bg">
+                <i class="dark-bg-right"></i>
+            </div>
+        </div>
+        <div class="leg-content leg-front">
+            <div class="leg-first-joint"><i></i></div>
+            <div class="leg-first">
+                <i class="leg-first-hr-a"></i>
+                <i class="leg-first-hr-b"></i>
+                <div class="in-first-leg">
+                    <div class="leg-second-joint"><i></i></div>
+                    <div class="leg-second">
+                        <i class="leg-second-hr"></i>
+                        <div class="in-second-leg">
+                            <div class="foot-joint"><i class="foot-ankle"><i class="foot-ankle-bg"></i></i></div>
+                            <div class="foot-ankle-bottom"></div>
+                            <div class="foot-ankle-space"></div>
+                            <div class="foot">
+                                <div class="foot-bottom"></div>
+                                <div class="foot-land"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leg-content leg-rear">
+            <div class="leg-first-joint"><i></i></div>
+            <div class="leg-first">
+                <i class="leg-first-hr-a"></i>
+                <i class="leg-first-hr-b"></i>
+                <div class="in-first-leg">
+                    <div class="leg-second-joint"><i></i></div>
+                    <div class="leg-second">
+                        <i class="leg-second-hr"></i>
+                        <div class="in-second-leg">
+                            <div class="foot-joint"><i class="foot-ankle"><i class="foot-ankle-bg"></i></i></div>
+                            <div class="foot-ankle-bottom"></div>
+                            <div class="foot-ankle-space"></div>
+                            <div class="foot">
+                                <div class="foot-bottom"></div>
+                                <div class="foot-land"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leg-content leg-front-back">
+            <div class="leg-first-joint"><i></i></div>
+            <div class="leg-first">
+                <i class="leg-first-hr-a"></i>
+                <i class="leg-first-hr-b"></i>
+                <div class="in-first-leg">
+                    <div class="leg-second-joint"><i></i></div>
+                    <div class="leg-second">
+                        <i class="leg-second-hr"></i>
+                        <div class="in-second-leg">
+                            <div class="foot-joint"><i class="foot-ankle"><i class="foot-ankle-bg"></i></i></div>
+                            <div class="foot-ankle-bottom"></div>
+                            <div class="foot-ankle-space"></div>
+                            <div class="foot">
+                                <div class="foot-bottom"></div>
+                                <div class="foot-land"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leg-content leg-rear-back">
+            <div class="leg-first-joint"><i></i></div>
+            <div class="leg-first">
+                <i class="leg-first-hr-a"></i>
+                <i class="leg-first-hr-b"></i>
+                <div class="in-first-leg">
+                    <div class="leg-second-joint"><i></i></div>
+                    <div class="leg-second">
+                        <i class="leg-second-hr"></i>
+                        <div class="in-second-leg">
+                            <div class="foot-joint"><i class="foot-ankle"><i class="foot-ankle-bg"></i></i></div>
+                            <div class="foot-ankle-bottom"></div>
+                            <div class="foot-ankle-space"></div>
+                            <div class="foot">
+                                <div class="foot-bottom"></div>
+                                <div class="foot-land"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg">
+        <i class="star star-1"></i>
+        <i class="star star-2"></i>
+        <i class="star star-3"></i>
+        <i class="star star-4"></i>
+        <i class="star star-5"></i>
+        <i class="star star-6"></i>
+        <i class="star-small star-small-1"></i>
+        <i class="star-small star-small-2"></i>
+        <i class="star-small star-small-3"></i>
+        <i class="star-small star-small-4"></i>
+        <i class="star-small star-small-5"></i>
+        <i class="star-small star-small-6"></i>
+        <i class="star-small star-small-7"></i>
+        <i class="star-small star-small-8"></i>
+        <i class="star-small star-small-9"></i>
+        <i class="star-small star-small-10"></i>
+    </div>
+    <i class="moon"></i>
+    <i class="mountain-first">
+        <i class="mountain-shadow"></i>
+    </i>
+    <i class="mountain-second">
+        <i class="mountain-shadow"></i>
+        <span class="mountain-top"></span>
+    </i>
+    <div class="first-bg">
+        <div class="first-bg-anim">
+            <i class="first"></i>
+            <i class="second"></i>
+            <i class="third"></i>
+            <i class="last"></i>
+        </div>
+        <div class="second-bg-anim">
+            <div class="first-rock-content">
+                <div class="rock-content rock-content-1">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+                <div class="rock-content rock-content-2">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+                <div class="rock-content rock-content-3">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+                <div class="rock-content rock-content-4">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+                <div class="rock-content rock-content-5">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+                <div class="rock-content rock-content-6">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+            </div>
+            <div class="second-rock-content">
+                <div class="rock-content rock-content-1">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+                <div class="rock-content rock-content-2">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+                <div class="rock-content rock-content-3">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+                <div class="rock-content rock-content-4">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+                <div class="rock-content rock-content-5">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+                <div class="rock-content rock-content-6">
+                    <i class="rock rock-big rock-1"></i>
+                    <i class="rock rock-big rock-2"></i>
+                    <i class="rock rock-big rock-3"></i>
+                    <i class="rock rock-middle rock-7"></i>
+                    <i class="rock rock-middle rock-8"></i>
+                    <i class="rock rock-middle rock-9"></i>
+                    <i class="rock rock-middle rock-10"></i>
+                    <i class="rock rock-middle rock-11"></i>
+                    <i class="rock rock-middle rock-12"></i>
+                    <i class="rock rock-middle rock-13"></i>
+                    <i class="rock rock-middle rock-14"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="space-ship space-ship-small">
+        <i class="space-ship-wing"></i>
+        <i class="space-ship-bg"><i class="space-ship-gun"></i></i>
+    </div>
+    <div class="space-ship space-ship-big">
+        <i class="space-ship-wing"></i>
+        <i class="space-ship-bg"><i class="space-ship-gun"></i></i>
+    </div>
+</div>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.4.1.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/CustomFunctions.js" type="text/javascript"></script>
+<script src="js/Identify.js" type="text/javascript"></script>
+</body>
+</html>
